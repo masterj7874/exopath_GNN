@@ -1,0 +1,35 @@
+name: Publish v1.0.1 for Zenodo
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.repository == 'masterj7874/exopath_GNN'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish archival release once
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v1.0.1 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "v1.0.1 already exists"
+            exit 0
+          fi
+          gh release create v1.0.1 \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$RELEASE_SHA" \
+            --title "ExoPath-GNN v1.0.1" \
+            --notes "DOI-ready archival release of the ExoPath-GNN prospective protocol reference implementation after enabling the Zenodo/GitHub integration. Includes patient-level split tooling, typed-graph and temporal leakage checks, censoring-aware survival utilities, matched protocol heads, shift and abstention checks, locked reporting contracts, synthetic tests, environment specifications and Zenodo metadata. Contains no participant-level TCGA, PLCO or PAIP data and makes no measured clinical-performance or quantum-advantage claim."
+

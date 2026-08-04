@@ -1,6 +1,6 @@
 # Reproducibility contract
 
-The v1.0.0 release verifies software contracts on synthetic data. A real-cohort
+The v1.0.1 release verifies software contracts on synthetic data. A real-cohort
 analysis is reproducible only after the following items are frozen before any
 external-test outcome is inspected:
 
@@ -30,4 +30,3 @@ python scripts/run_protocol_demo.py --output artifacts/demo
 
 The generated `provenance.json` records the seed, platform, Python version and
 SHA-256 hashes of the frozen configuration and graph schema.
-
