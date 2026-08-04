@@ -5,6 +5,7 @@ type: software
 version: 1.0.1
 date-released: 2026-08-04
 license: MIT
+doi: "10.5281/zenodo.21782465"
 repository-code: "https://github.com/masterj7874/exopath_GNN"
 authors:
   - family-names: Suh

@@ -1,5 +1,7 @@
 # ExoPath-GNN
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21782465.svg)](https://doi.org/10.5281/zenodo.21782465)
+
 Reference implementation and reproducibility scaffold for **“ExoPath-GNN: a
 leakage-controlled, shift-aware framework for externally validated
 colon-cancer survival triage.”**
@@ -71,7 +73,10 @@ abstention thresholds, and archive the resulting configuration and hashes.
 
 ## Citation and licence
 
+The exact archived release is available at
+[doi:10.5281/zenodo.21782465](https://doi.org/10.5281/zenodo.21782465); the
+version-independent concept DOI is
+[doi:10.5281/zenodo.21782464](https://doi.org/10.5281/zenodo.21782464).
 Citation metadata are provided in `CITATION.cff`. The software is released
 under the [MIT License](LICENSE). Dataset licences and cohort governance terms
 remain independent of this software licence.
-
