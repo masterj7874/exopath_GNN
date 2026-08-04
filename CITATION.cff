@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the archived ExoPath-GNN release."
 title: "ExoPath-GNN: a leakage-controlled, shift-aware framework for externally validated colon-cancer survival triage"
 type: software
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-08-04
 license: MIT
 repository-code: "https://github.com/masterj7874/exopath_GNN"
@@ -27,4 +27,3 @@ keywords:
   - molecular pathological epidemiology
   - external validation
   - calibration
-
