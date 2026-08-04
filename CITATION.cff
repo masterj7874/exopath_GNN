@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived ExoPath-GNN release."
+title: "ExoPath-GNN: a leakage-controlled, shift-aware framework for externally validated colon-cancer survival triage"
+type: software
+version: 1.0.0
+date-released: 2026-08-04
+license: MIT
+repository-code: "https://github.com/masterj7874/exopath_GNN"
+authors:
+  - family-names: Suh
+    given-names: Youngsahng
+    orcid: "https://orcid.org/0009-0007-0944-2795"
+    affiliation: "The Machina AI; aSSIST University, Seoul, Republic of Korea"
+  - family-names: Lee
+    given-names: Hwa-young
+    affiliation: "The Catholic University of Korea, Seoul, Republic of Korea"
+  - family-names: Ogino
+    given-names: Shuji
+    orcid: "https://orcid.org/0000-0002-3909-2323"
+    affiliation: "Brigham and Women's Hospital and Harvard Medical School; Harvard T.H. Chan School of Public Health, Boston, MA, USA"
+keywords:
+  - colorectal cancer
+  - survival analysis
+  - graph neural networks
+  - multimodal learning
+  - exposome
+  - molecular pathological epidemiology
+  - external validation
+  - calibration
+

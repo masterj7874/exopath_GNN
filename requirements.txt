@@ -1,0 +1,3 @@
+# ExoPath-GNN has no third-party runtime dependencies.
+# Use Python 3.12 for the release-verified environment.
+

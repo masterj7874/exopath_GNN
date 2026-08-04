@@ -1,0 +1,47 @@
+{
+  "title": "ExoPath-GNN: a leakage-controlled, shift-aware framework for externally validated colon-cancer survival triage",
+  "description": "<p>Reference implementation and reproducibility scaffold for <strong>ExoPath-GNN</strong>, a prospective, leakage-controlled and shift-aware protocol for multimodal colon-cancer survival triage.</p><p>The release contains deterministic patient-level split tooling, a versioned typed-graph schema, censoring-aware survival utilities, budget-matched protocol heads, shift and abstention checks, a locked-output reporting contract, configuration and provenance specifications, unit tests, and a standard-library-only synthetic dry run.</p><p><strong>Important:</strong> the manuscript reports a planned analysis. This archive contains no participant-level TCGA, PLCO or PAIP data, no cohort-derived model weights, and no measured evidence of clinical performance, transportability or quantum advantage. The synthetic example tests software contracts only.</p>",
+  "upload_type": "software",
+  "language": "eng",
+  "access_right": "open",
+  "license": "mit",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Suh, Youngsahng",
+      "affiliation": "The Machina AI; aSSIST University, Seoul, Republic of Korea",
+      "orcid": "0009-0007-0944-2795"
+    },
+    {
+      "name": "Lee, Hwa-young",
+      "affiliation": "The Catholic University of Korea, Seoul, Republic of Korea"
+    },
+    {
+      "name": "Ogino, Shuji",
+      "affiliation": "Brigham and Women's Hospital and Harvard Medical School; Harvard T.H. Chan School of Public Health, Boston, MA, USA",
+      "orcid": "0000-0002-3909-2323"
+    }
+  ],
+  "keywords": [
+    "colorectal cancer",
+    "survival analysis",
+    "graph neural networks",
+    "multimodal learning",
+    "exposome",
+    "molecular pathological epidemiology",
+    "external validation",
+    "model calibration",
+    "dataset shift",
+    "leakage control"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/masterj7874/exopath_GNN",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Software accompanying a prospective methods manuscript. The included synthetic run is a contract test and must not be interpreted as a clinical result."
+}
+

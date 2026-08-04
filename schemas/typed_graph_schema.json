@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "node_types": [
+    "patient",
+    "pathology_region",
+    "molecular_measurement",
+    "exposure",
+    "clinical_covariate",
+    "biological_concept"
+  ],
+  "relations": {
+    "patient_has_pathology": {
+      "source": "patient",
+      "target": "pathology_region",
+      "temporal_guard": true,
+      "allowed_for_prediction": true,
+      "provenance_required": true
+    },
+    "patient_has_molecular_measurement": {
+      "source": "patient",
+      "target": "molecular_measurement",
+      "temporal_guard": true,
+      "allowed_for_prediction": true,
+      "provenance_required": true
+    },
+    "patient_has_exposure": {
+      "source": "patient",
+      "target": "exposure",
+      "temporal_guard": true,
+      "allowed_for_prediction": true,
+      "provenance_required": true
+    },
+    "patient_has_clinical_covariate": {
+      "source": "patient",
+      "target": "clinical_covariate",
+      "temporal_guard": true,
+      "allowed_for_prediction": true,
+      "provenance_required": true
+    },
+    "concept_related_to_measurement": {
+      "source": "biological_concept",
+      "target": "molecular_measurement",
+      "temporal_guard": false,
+      "allowed_for_prediction": true,
+      "provenance_required": true
+    },
+    "outcome_derived_association": {
+      "source": "biological_concept",
+      "target": "patient",
+      "temporal_guard": false,
+      "allowed_for_prediction": false,
+      "provenance_required": true
+    }
+  }
+}
+

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exopath-gnn"
+version = "1.0.0"
+description = "Leakage-controlled protocol scaffold for multimodal colon-cancer survival triage"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Youngsahng Suh"},
+  {name = "Hwa-young Lee"},
+  {name = "Shuji Ogino"}
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/masterj7874/exopath_GNN"
+
+[project.scripts]
+exopath-gnn = "exopath_gnn.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

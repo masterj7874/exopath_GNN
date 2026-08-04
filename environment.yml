@@ -1,0 +1,6 @@
+name: exopath-gnn
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+

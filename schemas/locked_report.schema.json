@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/masterj7874/exopath_GNN/schemas/locked_report.schema.json",
+  "title": "ExoPath-GNN locked report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "patient_id",
+    "horizon_months",
+    "survival_probability",
+    "risk_probability",
+    "triage",
+    "calibration_status",
+    "modalities",
+    "abstained",
+    "narrative"
+  ],
+  "properties": {
+    "patient_id": {"type": "string"},
+    "horizon_months": {"type": "integer", "minimum": 1},
+    "survival_probability": {"type": "number", "minimum": 0, "maximum": 1},
+    "risk_probability": {"type": "number", "minimum": 0, "maximum": 1},
+    "triage": {"enum": ["low", "intermediate", "high", "abstain"]},
+    "calibration_status": {"enum": ["development_only", "externally_checked", "not_applicable"]},
+    "modalities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "abstained": {"type": "boolean"},
+    "narrative": {"type": "string"}
+  }
+}
+

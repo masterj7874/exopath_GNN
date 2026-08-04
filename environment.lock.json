@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-08-04",
+  "python": {
+    "implementation": "CPython",
+    "version": "3.12.10"
+  },
+  "runtime_dependencies": [],
+  "note": "The v1.0.0 protocol scaffold is intentionally standard-library-only. Accelerator and model-library versions must be frozen separately before real-cohort analysis."
+}
+

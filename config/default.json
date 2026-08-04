@@ -1,0 +1,45 @@
+{
+  "protocol_version": "1.0.0",
+  "seed": 20260804,
+  "status": "prospective_protocol",
+  "endpoint": {
+    "name": "overall_survival",
+    "index_date": "diagnostic_specimen_date_[FREEZE_BEFORE_ANALYSIS]",
+    "horizons_months": [12, 36, 60],
+    "interval_end_months": [12, 36, 60]
+  },
+  "cohorts": {
+    "development": "TCGA-COAD_READ_[FREEZE_GDC_RELEASE_AND_UUID_MANIFEST]",
+    "external_survival": "PLCO_COLORECTAL_[APPROVAL_AND_DTU_REQUIRED]",
+    "morphology_shift": "PAIP_COLORECTAL_[TERMS_APPLY]"
+  },
+  "development_split": {
+    "train": 0.7,
+    "tuning": 0.15,
+    "calibration": 0.15
+  },
+  "leakage_controls": {
+    "partition_unit": "patient",
+    "fit_preprocessing_on": "train_only",
+    "external_outcomes_opened": "once_after_freeze",
+    "reject_post_index_edges": true,
+    "reject_outcome_derived_relations": true
+  },
+  "abstention": {
+    "max_standardized_shift": 1.5,
+    "max_missing_modality_rate": 0.5
+  },
+  "benchmark": {
+    "branches": ["classical_linear", "angle_encoded_protocol_simulator"],
+    "same_features": true,
+    "same_parameter_budget": true,
+    "same_optimization_budget": true,
+    "quantum_advantage_assumed": false
+  },
+  "reporting": {
+    "numeric_source": "locked_survival_head",
+    "allow_treatment_recommendations": false,
+    "allow_causal_claims": false
+  }
+}
+
